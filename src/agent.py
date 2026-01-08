@@ -95,7 +95,8 @@ def qa_agent(state: AgentState, config: RunnableConfig)-> AgentState:
 
     prompt_template= get_chat_prompt_template("qa")
 
-    messages= prompt_template.invoke({"input":state["user_input"], "chat_history":state.get("mesages", [])}).to_messages
+    prompt_value = prompt_template.invoke({"input":state["user_input"], "chat_history":state.get("messages", [])})
+    messages = prompt_value.to_messages()
 
     result, tools_used= invoke_react_agent(AnswerResponse, messages, llm, tools)
 

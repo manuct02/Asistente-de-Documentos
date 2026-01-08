@@ -3,6 +3,7 @@ import json
 from typing import Dict, Any, List, Optional
 from datetime import datetime
 import uuid
+from dotenv import load_dotenv
 
 from langchain_core.messages import BaseMessage
 from langchain_openai import ChatOpenAI
@@ -13,16 +14,18 @@ from tools import ToolLogger, get_all_tools
 from agent import create_workflow, AgentState
 from prompts import MEMORY_SUMMARY_PROMPT
 
+load_dotenv()
+
 class DocumentAssistant:
     """
     Este asistente crea y carga sesiones y almacena
     los datos de estados/sesiones en un file
     """
 
-    def __init__(self, open_api_key: str, model_name: str= "gpt-4-o", temperature: float= 0.1, session_storage_path: str="./sessions"):
+    def __init__(self, open_api_key: str, model_name: str= "gpt-4o", temperature: float= 0.1, session_storage_path: str="./sessions"):
         
         # Inicializa el LLM
-        self.llm= ChatOpenAI(api_key=open_api_key, model=model_name, temperature=temperature, base_url="OPENAI_BASE_URL")
+        self.llm= ChatOpenAI(api_key=open_api_key, model=model_name, temperature=temperature, base_url=os.getenv("OPENAI_BASE_URL"))
 
         # Incializa componentes 
         self.retriever= SimulatedRetriever() #retrival.py
@@ -37,7 +40,7 @@ class DocumentAssistant:
         os.makedirs(session_storage_path, exist_ok=True)
 
         # Sesión actual
-        self.current_session= Optional[SessionState]= None
+        self.current_session: Optional[SessionState]= None
 
     def start_session(self, user_id: str, session_id: Optional[str]= None)->str:
         """Inicia una nueva sesión o recupera una existente"""
@@ -107,7 +110,7 @@ class DocumentAssistant:
         if not self.current_session:
             raise ValueError("No active session. Call start_session() first")
 
-        config= {"configurable":{"threat_id":self.current_session.session_id,
+        config= {"configurable":{"thread_id":self.current_session.session_id,
                                  "llm": self.llm,
                                  "tools": self.tools}}
         
