@@ -1,0 +1,1421 @@
+{
+  "session_id": "22fa36f2-718b-4ad3-89b1-3765699edf19",
+  "user_id": "demo_user",
+  "conversation_history": [
+    {
+      "user_input": "Buenas, qu\u00e9 documentos me has preparado?",
+      "messages": [
+        {
+          "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "db7ac927-8897-496f-a947-6a862945b2ec"
+        },
+        {
+          "content": "Buenas, qu\u00e9 documentos me has preparado?",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "b7c3e8c3-3fc3-45ad-a016-b9c504df1465"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 10,
+              "prompt_tokens": 680,
+              "total_tokens": 690,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_deacdd5f6f",
+            "id": "chatcmpl-Cw2P5Ou5yKllxS75TzS96YQXJq4Gu",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019ba1ee-2a55-7c31-bd51-c69cdeab37d9-0",
+          "tool_calls": [
+            {
+              "name": "document_statistics",
+              "args": {},
+              "id": "call_eeRRCzTtduaD8nlu8xyn4neW",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 680,
+            "output_tokens": 10,
+            "total_tokens": 690,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_statistics",
+          "id": "b70036bb-af54-4ffc-b582-dc56190da396",
+          "tool_call_id": "call_eeRRCzTtduaD8nlu8xyn4neW",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "Actualmente, tengo preparados los siguientes documentos:\n\n- **Total de Documentos:** 5\n- **Documentos con Montos:** 4\n\n**Tipos de Documentos:**\n- Facturas: 3\n- Contratos: 1\n- Reclamaciones: 1\n\n**Resumen Financiero:**\n- Monto Total: $466,250.00\n- Monto Promedio: $116,562.50\n- Monto M\u00ednimo: $2,450.00\n- Monto M\u00e1ximo: $214,500.00\n\nSi necesitas informaci\u00f3n espec\u00edfica sobre alguno de estos documentos, h\u00e1zmelo saber.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 132,
+              "prompt_tokens": 792,
+              "total_tokens": 924,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_deacdd5f6f",
+            "id": "chatcmpl-Cw2P68mFHY69m2AKWG1bAXIEHn4qe",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019ba1ee-2e32-7e41-add5-f0bdb00e9061-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 792,
+            "output_tokens": 132,
+            "total_tokens": 924,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        }
+      ],
+      "intent": {
+        "intent_type": "qa",
+        "confidence": 0.85,
+        "reasoning": "The user is inquiring about the documents that have been prepared for them. This is a question about documents, which aligns with the 'qa' category. There is no indication of a need for summarization or calculation, and the intent is clear enough to avoid the 'unknown' category."
+      },
+      "next_step": "end",
+      "conversation_summary": "El usuario pregunt\u00f3 sobre los documentos preparados. Se le inform\u00f3 que hay un total de 5 documentos, de los cuales 4 contienen montos. Los tipos de documentos incluyen 3 facturas, 1 contrato y 1 reclamaci\u00f3n. Se proporcion\u00f3 un resumen financiero con un monto total de $466,250.00, un monto promedio de $116,562.50, un monto m\u00ednimo de $2,450.00 y un monto m\u00e1ximo de $214,500.00.",
+      "active_documents": [],
+      "current_response": {
+        "messages": [
+          {
+            "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "db7ac927-8897-496f-a947-6a862945b2ec"
+          },
+          {
+            "content": "Buenas, qu\u00e9 documentos me has preparado?",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "b7c3e8c3-3fc3-45ad-a016-b9c504df1465"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 10,
+                "prompt_tokens": 680,
+                "total_tokens": 690,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_deacdd5f6f",
+              "id": "chatcmpl-Cw2P5Ou5yKllxS75TzS96YQXJq4Gu",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019ba1ee-2a55-7c31-bd51-c69cdeab37d9-0",
+            "tool_calls": [
+              {
+                "name": "document_statistics",
+                "args": {},
+                "id": "call_eeRRCzTtduaD8nlu8xyn4neW",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 680,
+              "output_tokens": 10,
+              "total_tokens": 690,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_statistics",
+            "id": "b70036bb-af54-4ffc-b582-dc56190da396",
+            "tool_call_id": "call_eeRRCzTtduaD8nlu8xyn4neW",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "Actualmente, tengo preparados los siguientes documentos:\n\n- **Total de Documentos:** 5\n- **Documentos con Montos:** 4\n\n**Tipos de Documentos:**\n- Facturas: 3\n- Contratos: 1\n- Reclamaciones: 1\n\n**Resumen Financiero:**\n- Monto Total: $466,250.00\n- Monto Promedio: $116,562.50\n- Monto M\u00ednimo: $2,450.00\n- Monto M\u00e1ximo: $214,500.00\n\nSi necesitas informaci\u00f3n espec\u00edfica sobre alguno de estos documentos, h\u00e1zmelo saber.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 132,
+                "prompt_tokens": 792,
+                "total_tokens": 924,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_deacdd5f6f",
+              "id": "chatcmpl-Cw2P68mFHY69m2AKWG1bAXIEHn4qe",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019ba1ee-2e32-7e41-add5-f0bdb00e9061-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 792,
+              "output_tokens": 132,
+              "total_tokens": 924,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          }
+        ],
+        "structured_response": {
+          "question": "qu\u00e9 documentos me has preparado?",
+          "answer": "Actualmente, tengo preparados los siguientes documentos:\n\n- **Total de Documentos:** 5\n- **Documentos con Montos:** 4\n\n**Tipos de Documentos:**\n- Facturas: 3\n- Contratos: 1\n- Reclamaciones: 1\n\n**Resumen Financiero:**\n- Monto Total: $466,250.00\n- Monto Promedio: $116,562.50\n- Monto M\u00ednimo: $2,450.00\n- Monto M\u00e1ximo: $214,500.00\n\nSi necesitas informaci\u00f3n espec\u00edfica sobre alguno de estos documentos, h\u00e1zmelo saber.",
+          "sources": [],
+          "confidence": 0.0,
+          "timestamp": "2023-10-18T12:00:00+00:00"
+        }
+      },
+      "tools_used": [
+        "document_statistics"
+      ],
+      "session_id": "22fa36f2-718b-4ad3-89b1-3765699edf19",
+      "user_id": "demo_user",
+      "actions_taken": [
+        "classify_intent",
+        "qa_agent",
+        "update_memory"
+      ]
+    },
+    {
+      "user_input": "cu\u00e1nto es el Monto total?",
+      "messages": [
+        {
+          "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "db7ac927-8897-496f-a947-6a862945b2ec"
+        },
+        {
+          "content": "Buenas, qu\u00e9 documentos me has preparado?",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "b7c3e8c3-3fc3-45ad-a016-b9c504df1465"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 10,
+              "prompt_tokens": 680,
+              "total_tokens": 690,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_deacdd5f6f",
+            "id": "chatcmpl-Cw2P5Ou5yKllxS75TzS96YQXJq4Gu",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019ba1ee-2a55-7c31-bd51-c69cdeab37d9-0",
+          "tool_calls": [
+            {
+              "name": "document_statistics",
+              "args": {},
+              "id": "call_eeRRCzTtduaD8nlu8xyn4neW",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 680,
+            "output_tokens": 10,
+            "total_tokens": 690,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_statistics",
+          "id": "b70036bb-af54-4ffc-b582-dc56190da396",
+          "tool_call_id": "call_eeRRCzTtduaD8nlu8xyn4neW",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "Actualmente, tengo preparados los siguientes documentos:\n\n- **Total de Documentos:** 5\n- **Documentos con Montos:** 4\n\n**Tipos de Documentos:**\n- Facturas: 3\n- Contratos: 1\n- Reclamaciones: 1\n\n**Resumen Financiero:**\n- Monto Total: $466,250.00\n- Monto Promedio: $116,562.50\n- Monto M\u00ednimo: $2,450.00\n- Monto M\u00e1ximo: $214,500.00\n\nSi necesitas informaci\u00f3n espec\u00edfica sobre alguno de estos documentos, h\u00e1zmelo saber.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 132,
+              "prompt_tokens": 792,
+              "total_tokens": 924,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_deacdd5f6f",
+            "id": "chatcmpl-Cw2P68mFHY69m2AKWG1bAXIEHn4qe",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019ba1ee-2e32-7e41-add5-f0bdb00e9061-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 792,
+            "output_tokens": 132,
+            "total_tokens": 924,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "\nYou are a calculation-focused document assistant.\n\nYour job is to answer questions that require mathematical operations or numeric computations,\noften using values found inside retrieved documents.\n\nRules (follow strictly):\n1) If any required numbers might be in documents, you MUST retrieve the relevant document(s)\n   using the available document search/reader tools before calculating.\n2) You MUST use the calculator tool named: \"calculator\" for ALL calculations, even if they seem simple.\n   Do NOT do mental math.\n3) Be explicit about which values you used and where they came from (cite document IDs when possible).\n4) Build a clean mathematical expression representing the calculation.\n5) Return a structured calculation response.\n\nWhen producing the final answer, ensure it contains:\n- expression: the exact mathematical expression you calculated\n- result: the numeric result\n- explanation: a brief explanation of how you got it and which document values were used\n- units: units if applicable, otherwise null\n\nIf you cannot find the needed values in documents, say what is missing and what you searched.\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "471ba44e-8294-4f2a-88fe-06ecbb709c46"
+        },
+        {
+          "content": "cu\u00e1nto es el Monto total?",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "b1f8eb83-178f-4604-b797-4732d3fecc6d"
+        },
+        {
+          "content": "El Monto Total de los documentos es $466,250.00.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 16,
+              "prompt_tokens": 1154,
+              "total_tokens": 1170,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_deacdd5f6f",
+            "id": "chatcmpl-Cw2PVvkgI6KTYnfkeS8AcrGi2egrd",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019ba1ee-923e-7513-b049-e67679da6c20-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1154,
+            "output_tokens": 16,
+            "total_tokens": 1170,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        }
+      ],
+      "intent": {
+        "intent_type": "calculation",
+        "confidence": 0.9,
+        "reasoning": "The user is asking for the 'Monto total', which refers to the total amount. This suggests they are inquiring about a numerical value related to the documents, which aligns with the 'calculation' category. The recent conversation history also indicates that financial summaries, including total amounts, have been discussed, reinforcing the likelihood that the user is seeking a numerical computation or confirmation."
+      },
+      "next_step": "end",
+      "conversation_summary": "El usuario pregunt\u0000f3 sobre los documentos preparados, y se le proporcion\u0000f3 un resumen de los documentos disponibles, que incluyen facturas, contratos y reclamaciones, con un resumen financiero que indica un monto total de $466,250.00. Posteriormente, el usuario solicit\u0000f3 confirmar el monto total, que se reiter\u0000f3 como $466,250.00.",
+      "active_documents": [],
+      "current_response": {
+        "messages": [
+          {
+            "content": "\nYou are a calculation-focused document assistant.\n\nYour job is to answer questions that require mathematical operations or numeric computations,\noften using values found inside retrieved documents.\n\nRules (follow strictly):\n1) If any required numbers might be in documents, you MUST retrieve the relevant document(s)\n   using the available document search/reader tools before calculating.\n2) You MUST use the calculator tool named: \"calculator\" for ALL calculations, even if they seem simple.\n   Do NOT do mental math.\n3) Be explicit about which values you used and where they came from (cite document IDs when possible).\n4) Build a clean mathematical expression representing the calculation.\n5) Return a structured calculation response.\n\nWhen producing the final answer, ensure it contains:\n- expression: the exact mathematical expression you calculated\n- result: the numeric result\n- explanation: a brief explanation of how you got it and which document values were used\n- units: units if applicable, otherwise null\n\nIf you cannot find the needed values in documents, say what is missing and what you searched.\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "471ba44e-8294-4f2a-88fe-06ecbb709c46"
+          },
+          {
+            "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "db7ac927-8897-496f-a947-6a862945b2ec"
+          },
+          {
+            "content": "Buenas, qu\u00e9 documentos me has preparado?",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "b7c3e8c3-3fc3-45ad-a016-b9c504df1465"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 10,
+                "prompt_tokens": 680,
+                "total_tokens": 690,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_deacdd5f6f",
+              "id": "chatcmpl-Cw2P5Ou5yKllxS75TzS96YQXJq4Gu",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019ba1ee-2a55-7c31-bd51-c69cdeab37d9-0",
+            "tool_calls": [
+              {
+                "name": "document_statistics",
+                "args": {},
+                "id": "call_eeRRCzTtduaD8nlu8xyn4neW",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 680,
+              "output_tokens": 10,
+              "total_tokens": 690,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_statistics",
+            "id": "b70036bb-af54-4ffc-b582-dc56190da396",
+            "tool_call_id": "call_eeRRCzTtduaD8nlu8xyn4neW",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "Actualmente, tengo preparados los siguientes documentos:\n\n- **Total de Documentos:** 5\n- **Documentos con Montos:** 4\n\n**Tipos de Documentos:**\n- Facturas: 3\n- Contratos: 1\n- Reclamaciones: 1\n\n**Resumen Financiero:**\n- Monto Total: $466,250.00\n- Monto Promedio: $116,562.50\n- Monto M\u00ednimo: $2,450.00\n- Monto M\u00e1ximo: $214,500.00\n\nSi necesitas informaci\u00f3n espec\u00edfica sobre alguno de estos documentos, h\u00e1zmelo saber.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 132,
+                "prompt_tokens": 792,
+                "total_tokens": 924,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_deacdd5f6f",
+              "id": "chatcmpl-Cw2P68mFHY69m2AKWG1bAXIEHn4qe",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019ba1ee-2e32-7e41-add5-f0bdb00e9061-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 792,
+              "output_tokens": 132,
+              "total_tokens": 924,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "cu\u00e1nto es el Monto total?",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "b1f8eb83-178f-4604-b797-4732d3fecc6d"
+          },
+          {
+            "content": "El Monto Total de los documentos es $466,250.00.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 16,
+                "prompt_tokens": 1154,
+                "total_tokens": 1170,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_deacdd5f6f",
+              "id": "chatcmpl-Cw2PVvkgI6KTYnfkeS8AcrGi2egrd",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019ba1ee-923e-7513-b049-e67679da6c20-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1154,
+              "output_tokens": 16,
+              "total_tokens": 1170,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          }
+        ],
+        "structured_response": {
+          "expression": "Monto Total = $466,250.00",
+          "result": 466250.0,
+          "explanation": "El Monto Total de los documentos es $466,250.00, seg\u00fan el resumen financiero de los documentos disponibles.",
+          "units": "USD",
+          "timestamp": "2023-10-06T12:00:00+00:00"
+        }
+      },
+      "tools_used": [
+        "document_statistics"
+      ],
+      "session_id": "22fa36f2-718b-4ad3-89b1-3765699edf19",
+      "user_id": "demo_user",
+      "actions_taken": [
+        "classify_intent",
+        "qa_agent",
+        "update_memory",
+        "classify_intent",
+        "calculation_agent",
+        "update_memory"
+      ]
+    },
+    {
+      "user_input": "Me lo multiplicas por 2?",
+      "messages": [
+        {
+          "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "db7ac927-8897-496f-a947-6a862945b2ec"
+        },
+        {
+          "content": "Buenas, qu\u00e9 documentos me has preparado?",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "b7c3e8c3-3fc3-45ad-a016-b9c504df1465"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 10,
+              "prompt_tokens": 680,
+              "total_tokens": 690,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_deacdd5f6f",
+            "id": "chatcmpl-Cw2P5Ou5yKllxS75TzS96YQXJq4Gu",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019ba1ee-2a55-7c31-bd51-c69cdeab37d9-0",
+          "tool_calls": [
+            {
+              "name": "document_statistics",
+              "args": {},
+              "id": "call_eeRRCzTtduaD8nlu8xyn4neW",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 680,
+            "output_tokens": 10,
+            "total_tokens": 690,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_statistics",
+          "id": "b70036bb-af54-4ffc-b582-dc56190da396",
+          "tool_call_id": "call_eeRRCzTtduaD8nlu8xyn4neW",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "Actualmente, tengo preparados los siguientes documentos:\n\n- **Total de Documentos:** 5\n- **Documentos con Montos:** 4\n\n**Tipos de Documentos:**\n- Facturas: 3\n- Contratos: 1\n- Reclamaciones: 1\n\n**Resumen Financiero:**\n- Monto Total: $466,250.00\n- Monto Promedio: $116,562.50\n- Monto M\u00ednimo: $2,450.00\n- Monto M\u00e1ximo: $214,500.00\n\nSi necesitas informaci\u00f3n espec\u00edfica sobre alguno de estos documentos, h\u00e1zmelo saber.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 132,
+              "prompt_tokens": 792,
+              "total_tokens": 924,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_deacdd5f6f",
+            "id": "chatcmpl-Cw2P68mFHY69m2AKWG1bAXIEHn4qe",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019ba1ee-2e32-7e41-add5-f0bdb00e9061-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 792,
+            "output_tokens": 132,
+            "total_tokens": 924,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "\nYou are a calculation-focused document assistant.\n\nYour job is to answer questions that require mathematical operations or numeric computations,\noften using values found inside retrieved documents.\n\nRules (follow strictly):\n1) If any required numbers might be in documents, you MUST retrieve the relevant document(s)\n   using the available document search/reader tools before calculating.\n2) You MUST use the calculator tool named: \"calculator\" for ALL calculations, even if they seem simple.\n   Do NOT do mental math.\n3) Be explicit about which values you used and where they came from (cite document IDs when possible).\n4) Build a clean mathematical expression representing the calculation.\n5) Return a structured calculation response.\n\nWhen producing the final answer, ensure it contains:\n- expression: the exact mathematical expression you calculated\n- result: the numeric result\n- explanation: a brief explanation of how you got it and which document values were used\n- units: units if applicable, otherwise null\n\nIf you cannot find the needed values in documents, say what is missing and what you searched.\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "471ba44e-8294-4f2a-88fe-06ecbb709c46"
+        },
+        {
+          "content": "cu\u00e1nto es el Monto total?",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "b1f8eb83-178f-4604-b797-4732d3fecc6d"
+        },
+        {
+          "content": "El Monto Total de los documentos es $466,250.00.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 16,
+              "prompt_tokens": 1154,
+              "total_tokens": 1170,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_deacdd5f6f",
+            "id": "chatcmpl-Cw2PVvkgI6KTYnfkeS8AcrGi2egrd",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019ba1ee-923e-7513-b049-e67679da6c20-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1154,
+            "output_tokens": 16,
+            "total_tokens": 1170,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "\nYou are a calculation-focused document assistant.\n\nYour job is to answer questions that require mathematical operations or numeric computations,\noften using values found inside retrieved documents.\n\nRules (follow strictly):\n1) If any required numbers might be in documents, you MUST retrieve the relevant document(s)\n   using the available document search/reader tools before calculating.\n2) You MUST use the calculator tool named: \"calculator\" for ALL calculations, even if they seem simple.\n   Do NOT do mental math.\n3) Be explicit about which values you used and where they came from (cite document IDs when possible).\n4) Build a clean mathematical expression representing the calculation.\n5) Return a structured calculation response.\n\nWhen producing the final answer, ensure it contains:\n- expression: the exact mathematical expression you calculated\n- result: the numeric result\n- explanation: a brief explanation of how you got it and which document values were used\n- units: units if applicable, otherwise null\n\nIf you cannot find the needed values in documents, say what is missing and what you searched.\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "09cf67dd-452f-4f93-8afd-aa0e14c39ce1"
+        },
+        {
+          "content": "Me lo multiplicas por 2?",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "c27f4fae-206e-441a-93f9-cb470ba619ec"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 18,
+              "prompt_tokens": 1400,
+              "total_tokens": 1418,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 1024
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_deacdd5f6f",
+            "id": "chatcmpl-Cw2PquChUKRkMSDOitYHmLzZl5Qnj",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019ba1ee-e4ae-7ca1-bd7c-b1d85ce4f7db-0",
+          "tool_calls": [
+            {
+              "name": "calculator",
+              "args": {
+                "expression": "466250 * 2"
+              },
+              "id": "call_MI0XLFmkvfsI4AZj32FR4Kq0",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1400,
+            "output_tokens": 18,
+            "total_tokens": 1418,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 1024
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "Result: 932500",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "calculator",
+          "id": "bf4d5883-5ecb-4f15-b5e5-7980a380c4f1",
+          "tool_call_id": "call_MI0XLFmkvfsI4AZj32FR4Kq0",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "- **expression:** 466250 * 2\n- **result:** 932500\n- **explanation:** Multipliqu\u00e9 el Monto Total de $466,250.00 por 2.\n- **units:** null",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 48,
+              "prompt_tokens": 1430,
+              "total_tokens": 1478,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 1408
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_deacdd5f6f",
+            "id": "chatcmpl-Cw2PswIfPGnjM15LYOhD2f6A4QNLe",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019ba1ee-e8f9-7ca3-bdce-f459629769b1-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 1430,
+            "output_tokens": 48,
+            "total_tokens": 1478,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 1408
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        }
+      ],
+      "intent": {
+        "intent_type": "calculation",
+        "confidence": 0.95,
+        "reasoning": "The user's request 'Me lo multiplicas por 2?' directly asks for a multiplication operation, which is a mathematical calculation. Given the context of the conversation, where financial document amounts were discussed, it is likely that the user wants to multiply a previously mentioned amount by 2. This aligns with the 'calculation' intent category, as it involves a numerical computation."
+      },
+      "next_step": "end",
+      "conversation_summary": "El usuario pregunt\u0000f3 sobre los documentos preparados, y se le inform\u0000f3 que hay 5 documentos en total, incluyendo facturas, contratos y reclamaciones, con un monto total de $466,250.00. Luego, el usuario solicit\u0000f3 multiplicar este monto total por 2, lo que result\u0000f3 en $932,500.00.",
+      "active_documents": [],
+      "current_response": {
+        "messages": [
+          {
+            "content": "\nYou are a calculation-focused document assistant.\n\nYour job is to answer questions that require mathematical operations or numeric computations,\noften using values found inside retrieved documents.\n\nRules (follow strictly):\n1) If any required numbers might be in documents, you MUST retrieve the relevant document(s)\n   using the available document search/reader tools before calculating.\n2) You MUST use the calculator tool named: \"calculator\" for ALL calculations, even if they seem simple.\n   Do NOT do mental math.\n3) Be explicit about which values you used and where they came from (cite document IDs when possible).\n4) Build a clean mathematical expression representing the calculation.\n5) Return a structured calculation response.\n\nWhen producing the final answer, ensure it contains:\n- expression: the exact mathematical expression you calculated\n- result: the numeric result\n- explanation: a brief explanation of how you got it and which document values were used\n- units: units if applicable, otherwise null\n\nIf you cannot find the needed values in documents, say what is missing and what you searched.\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "09cf67dd-452f-4f93-8afd-aa0e14c39ce1"
+          },
+          {
+            "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "db7ac927-8897-496f-a947-6a862945b2ec"
+          },
+          {
+            "content": "Buenas, qu\u00e9 documentos me has preparado?",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "b7c3e8c3-3fc3-45ad-a016-b9c504df1465"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 10,
+                "prompt_tokens": 680,
+                "total_tokens": 690,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_deacdd5f6f",
+              "id": "chatcmpl-Cw2P5Ou5yKllxS75TzS96YQXJq4Gu",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019ba1ee-2a55-7c31-bd51-c69cdeab37d9-0",
+            "tool_calls": [
+              {
+                "name": "document_statistics",
+                "args": {},
+                "id": "call_eeRRCzTtduaD8nlu8xyn4neW",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 680,
+              "output_tokens": 10,
+              "total_tokens": 690,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_statistics",
+            "id": "b70036bb-af54-4ffc-b582-dc56190da396",
+            "tool_call_id": "call_eeRRCzTtduaD8nlu8xyn4neW",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "Actualmente, tengo preparados los siguientes documentos:\n\n- **Total de Documentos:** 5\n- **Documentos con Montos:** 4\n\n**Tipos de Documentos:**\n- Facturas: 3\n- Contratos: 1\n- Reclamaciones: 1\n\n**Resumen Financiero:**\n- Monto Total: $466,250.00\n- Monto Promedio: $116,562.50\n- Monto M\u00ednimo: $2,450.00\n- Monto M\u00e1ximo: $214,500.00\n\nSi necesitas informaci\u00f3n espec\u00edfica sobre alguno de estos documentos, h\u00e1zmelo saber.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 132,
+                "prompt_tokens": 792,
+                "total_tokens": 924,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_deacdd5f6f",
+              "id": "chatcmpl-Cw2P68mFHY69m2AKWG1bAXIEHn4qe",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019ba1ee-2e32-7e41-add5-f0bdb00e9061-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 792,
+              "output_tokens": 132,
+              "total_tokens": 924,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "\nYou are a calculation-focused document assistant.\n\nYour job is to answer questions that require mathematical operations or numeric computations,\noften using values found inside retrieved documents.\n\nRules (follow strictly):\n1) If any required numbers might be in documents, you MUST retrieve the relevant document(s)\n   using the available document search/reader tools before calculating.\n2) You MUST use the calculator tool named: \"calculator\" for ALL calculations, even if they seem simple.\n   Do NOT do mental math.\n3) Be explicit about which values you used and where they came from (cite document IDs when possible).\n4) Build a clean mathematical expression representing the calculation.\n5) Return a structured calculation response.\n\nWhen producing the final answer, ensure it contains:\n- expression: the exact mathematical expression you calculated\n- result: the numeric result\n- explanation: a brief explanation of how you got it and which document values were used\n- units: units if applicable, otherwise null\n\nIf you cannot find the needed values in documents, say what is missing and what you searched.\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "471ba44e-8294-4f2a-88fe-06ecbb709c46"
+          },
+          {
+            "content": "cu\u00e1nto es el Monto total?",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "b1f8eb83-178f-4604-b797-4732d3fecc6d"
+          },
+          {
+            "content": "El Monto Total de los documentos es $466,250.00.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 16,
+                "prompt_tokens": 1154,
+                "total_tokens": 1170,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_deacdd5f6f",
+              "id": "chatcmpl-Cw2PVvkgI6KTYnfkeS8AcrGi2egrd",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019ba1ee-923e-7513-b049-e67679da6c20-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1154,
+              "output_tokens": 16,
+              "total_tokens": 1170,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "Me lo multiplicas por 2?",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "c27f4fae-206e-441a-93f9-cb470ba619ec"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 18,
+                "prompt_tokens": 1400,
+                "total_tokens": 1418,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 1024
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_deacdd5f6f",
+              "id": "chatcmpl-Cw2PquChUKRkMSDOitYHmLzZl5Qnj",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019ba1ee-e4ae-7ca1-bd7c-b1d85ce4f7db-0",
+            "tool_calls": [
+              {
+                "name": "calculator",
+                "args": {
+                  "expression": "466250 * 2"
+                },
+                "id": "call_MI0XLFmkvfsI4AZj32FR4Kq0",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1400,
+              "output_tokens": 18,
+              "total_tokens": 1418,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 1024
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "Result: 932500",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "calculator",
+            "id": "bf4d5883-5ecb-4f15-b5e5-7980a380c4f1",
+            "tool_call_id": "call_MI0XLFmkvfsI4AZj32FR4Kq0",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "- **expression:** 466250 * 2\n- **result:** 932500\n- **explanation:** Multipliqu\u00e9 el Monto Total de $466,250.00 por 2.\n- **units:** null",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 48,
+                "prompt_tokens": 1430,
+                "total_tokens": 1478,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 1408
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_deacdd5f6f",
+              "id": "chatcmpl-Cw2PswIfPGnjM15LYOhD2f6A4QNLe",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019ba1ee-e8f9-7ca3-bdce-f459629769b1-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 1430,
+              "output_tokens": 48,
+              "total_tokens": 1478,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 1408
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          }
+        ],
+        "structured_response": {
+          "expression": "466250 * 2",
+          "result": 932500.0,
+          "explanation": "Multipliqu\u00e9 el Monto Total de $466,250.00 por 2.",
+          "units": null,
+          "timestamp": "2023-10-06T12:00:00+00:00"
+        }
+      },
+      "tools_used": [
+        "document_statistics",
+        "calculator"
+      ],
+      "session_id": "22fa36f2-718b-4ad3-89b1-3765699edf19",
+      "user_id": "demo_user",
+      "actions_taken": [
+        "classify_intent",
+        "qa_agent",
+        "update_memory",
+        "classify_intent",
+        "calculation_agent",
+        "update_memory",
+        "classify_intent",
+        "calculation_agent",
+        "update_memory"
+      ]
+    }
+  ],
+  "document_context": [],
+  "created_at": "2026-01-09T09:44:45.510712",
+  "last_updated": "2026-01-09T09:45:54.527756"
+}

@@ -111,7 +111,7 @@ def create_calculator_tool(logger: ToolLogger):
     def _safe_eval(expr: str)-> float:
         """Evaluar la expresión con eval() en un entorno restringido"""
 
-        -_validate_expression(expr)
+        _validate_expression(expr)
         return eval(compile(ast.parse(expr, mode= "eval"), "<calculator>", "eval"), {"__builtins__": {}}, {})
     
     @tool("calculator")

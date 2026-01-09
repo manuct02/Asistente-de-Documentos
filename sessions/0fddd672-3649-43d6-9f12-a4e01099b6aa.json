@@ -1,0 +1,303 @@
+{
+  "session_id": "0fddd672-3649-43d6-9f12-a4e01099b6aa",
+  "user_id": "demo_user",
+  "conversation_history": [
+    {
+      "user_input": "Qu\u00e9 documentos tienes para m\u00ed?",
+      "messages": [
+        {
+          "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "system",
+          "name": null,
+          "id": "52dd7c1e-d756-4cc9-8af6-bd0a79804f9a"
+        },
+        {
+          "content": "Qu\u00e9 documentos tienes para m\u00ed?",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "human",
+          "name": null,
+          "id": "26edea12-90bd-4a5f-8e70-080e250ce7ba"
+        },
+        {
+          "content": "",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 10,
+              "prompt_tokens": 678,
+              "total_tokens": 688,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_deacdd5f6f",
+            "id": "chatcmpl-Cw2E6bXpqY4Mhg06N0ncIqCdqqGgs",
+            "service_tier": "default",
+            "finish_reason": "tool_calls",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019ba1e3-c567-7253-9a33-782f66320067-0",
+          "tool_calls": [
+            {
+              "name": "document_statistics",
+              "args": {},
+              "id": "call_wimlthYIssMQ56ee5JaW8pN1",
+              "type": "tool_call"
+            }
+          ],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 678,
+            "output_tokens": 10,
+            "total_tokens": 688,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        },
+        {
+          "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+          "additional_kwargs": {},
+          "response_metadata": {},
+          "type": "tool",
+          "name": "document_statistics",
+          "id": "b9fc005c-f1b3-4062-a6ca-10cc57f4c1fe",
+          "tool_call_id": "call_wimlthYIssMQ56ee5JaW8pN1",
+          "artifact": null,
+          "status": "success"
+        },
+        {
+          "content": "Actualmente, tengo un total de 5 documentos en mi colecci\u00f3n. Aqu\u00ed est\u00e1 el desglose:\n\n- **Facturas (Invoices):** 3 documentos\n- **Contratos (Contracts):** 1 documento\n- **Reclamaciones (Claims):** 1 documento\n\nEn cuanto a los documentos financieros:\n\n- **Monto Total:** $466,250.00\n- **Monto Promedio:** $116,562.50\n- **Monto M\u00ednimo:** $2,450.00\n- **Monto M\u00e1ximo:** $214,500.00\n\nSi necesitas informaci\u00f3n espec\u00edfica sobre alguno de estos documentos, h\u00e1zmelo saber.",
+          "additional_kwargs": {
+            "refusal": null
+          },
+          "response_metadata": {
+            "token_usage": {
+              "completion_tokens": 131,
+              "prompt_tokens": 790,
+              "total_tokens": 921,
+              "completion_tokens_details": {
+                "accepted_prediction_tokens": 0,
+                "audio_tokens": 0,
+                "reasoning_tokens": 0,
+                "rejected_prediction_tokens": 0
+              },
+              "prompt_tokens_details": {
+                "audio_tokens": 0,
+                "cached_tokens": 0
+              }
+            },
+            "model_provider": "openai",
+            "model_name": "gpt-4o-2024-08-06",
+            "system_fingerprint": "fp_deacdd5f6f",
+            "id": "chatcmpl-Cw2E7NzmQzA0xwiCzpDvcF4wG7sDT",
+            "service_tier": "default",
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "type": "ai",
+          "name": null,
+          "id": "lc_run--019ba1e3-c8e4-7b40-8f91-c7ff6af51397-0",
+          "tool_calls": [],
+          "invalid_tool_calls": [],
+          "usage_metadata": {
+            "input_tokens": 790,
+            "output_tokens": 131,
+            "total_tokens": 921,
+            "input_token_details": {
+              "audio": 0,
+              "cache_read": 0
+            },
+            "output_token_details": {
+              "audio": 0,
+              "reasoning": 0
+            }
+          }
+        }
+      ],
+      "intent": {
+        "intent_type": "qa",
+        "confidence": 0.85,
+        "reasoning": "The user is inquiring about the availability of documents, which aligns with the 'qa' category as it involves a question about documents without requiring any calculations or summarization."
+      },
+      "next_step": "end",
+      "conversation_summary": "El usuario pregunt\u00f3 qu\u00e9 documentos est\u00e1n disponibles. Se inform\u00f3 que hay un total de 5 documentos: 3 facturas, 1 contrato y 1 reclamaci\u00f3n. Los documentos financieros tienen un monto total de $466,250.00, un promedio de $116,562.50, un m\u00ednimo de $2,450.00 y un m\u00e1ximo de $214,500.00.",
+      "active_documents": [],
+      "current_response": {
+        "messages": [
+          {
+            "content": "You are a helpful document assistant specializing in answering questions about financial and healthcare documents.\n\nYour capabilities:\n- Answer specific questions about document content\n- Cite sources accurately\n- Provide clear, concise answers\n- Use available tools to search and read documents\n\nGuidelines:\n1. Always search for relevant documents before answering\n2. Cite specific document IDs when referencing information\n3. If information is not found, say so clearly\n4. Be precise with numbers and dates\n5. Maintain professional tone\n\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "system",
+            "name": null,
+            "id": "52dd7c1e-d756-4cc9-8af6-bd0a79804f9a"
+          },
+          {
+            "content": "Qu\u00e9 documentos tienes para m\u00ed?",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "human",
+            "name": null,
+            "id": "26edea12-90bd-4a5f-8e70-080e250ce7ba"
+          },
+          {
+            "content": "",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 10,
+                "prompt_tokens": 678,
+                "total_tokens": 688,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_deacdd5f6f",
+              "id": "chatcmpl-Cw2E6bXpqY4Mhg06N0ncIqCdqqGgs",
+              "service_tier": "default",
+              "finish_reason": "tool_calls",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019ba1e3-c567-7253-9a33-782f66320067-0",
+            "tool_calls": [
+              {
+                "name": "document_statistics",
+                "args": {},
+                "id": "call_wimlthYIssMQ56ee5JaW8pN1",
+                "type": "tool_call"
+              }
+            ],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 678,
+              "output_tokens": 10,
+              "total_tokens": 688,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          },
+          {
+            "content": "DOCUMENT COLLECTION STATISTICS:\n\nTotal Documents: 5\nDocuments with Amounts: 4\n\nDocument Types:\n  - Invoice: 3\n  - Contract: 1\n  - Claim: 1\n\nFinancial Summary:\n  - Total Amount: $466,250.00\n  - Average Amount: $116,562.50\n  - Minimum Amount: $2,450.00\n  - Maximum Amount: $214,500.00\n",
+            "additional_kwargs": {},
+            "response_metadata": {},
+            "type": "tool",
+            "name": "document_statistics",
+            "id": "b9fc005c-f1b3-4062-a6ca-10cc57f4c1fe",
+            "tool_call_id": "call_wimlthYIssMQ56ee5JaW8pN1",
+            "artifact": null,
+            "status": "success"
+          },
+          {
+            "content": "Actualmente, tengo un total de 5 documentos en mi colecci\u00f3n. Aqu\u00ed est\u00e1 el desglose:\n\n- **Facturas (Invoices):** 3 documentos\n- **Contratos (Contracts):** 1 documento\n- **Reclamaciones (Claims):** 1 documento\n\nEn cuanto a los documentos financieros:\n\n- **Monto Total:** $466,250.00\n- **Monto Promedio:** $116,562.50\n- **Monto M\u00ednimo:** $2,450.00\n- **Monto M\u00e1ximo:** $214,500.00\n\nSi necesitas informaci\u00f3n espec\u00edfica sobre alguno de estos documentos, h\u00e1zmelo saber.",
+            "additional_kwargs": {
+              "refusal": null
+            },
+            "response_metadata": {
+              "token_usage": {
+                "completion_tokens": 131,
+                "prompt_tokens": 790,
+                "total_tokens": 921,
+                "completion_tokens_details": {
+                  "accepted_prediction_tokens": 0,
+                  "audio_tokens": 0,
+                  "reasoning_tokens": 0,
+                  "rejected_prediction_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "audio_tokens": 0,
+                  "cached_tokens": 0
+                }
+              },
+              "model_provider": "openai",
+              "model_name": "gpt-4o-2024-08-06",
+              "system_fingerprint": "fp_deacdd5f6f",
+              "id": "chatcmpl-Cw2E7NzmQzA0xwiCzpDvcF4wG7sDT",
+              "service_tier": "default",
+              "finish_reason": "stop",
+              "logprobs": null
+            },
+            "type": "ai",
+            "name": null,
+            "id": "lc_run--019ba1e3-c8e4-7b40-8f91-c7ff6af51397-0",
+            "tool_calls": [],
+            "invalid_tool_calls": [],
+            "usage_metadata": {
+              "input_tokens": 790,
+              "output_tokens": 131,
+              "total_tokens": 921,
+              "input_token_details": {
+                "audio": 0,
+                "cache_read": 0
+              },
+              "output_token_details": {
+                "audio": 0,
+                "reasoning": 0
+              }
+            }
+          }
+        ],
+        "structured_response": {
+          "question": "Qu\u00e9 documentos tienes para m\u00ed?",
+          "answer": "Actualmente, tengo un total de 5 documentos en mi colecci\u00f3n. Aqu\u00ed est\u00e1 el desglose:\n\n- **Facturas (Invoices):** 3 documentos\n- **Contratos (Contracts):** 1 documento\n- **Reclamaciones (Claims):** 1 documento\n\nEn cuanto a los documentos financieros:\n\n- **Monto Total:** $466,250.00\n- **Monto Promedio:** $116,562.50\n- **Monto M\u00ednimo:** $2,450.00\n- **Monto M\u00e1ximo:** $214,500.00\n\nSi necesitas informaci\u00f3n espec\u00edfica sobre alguno de estos documentos, h\u00e1zmelo saber.",
+          "sources": [],
+          "confidence": 0.0,
+          "timestamp": "2023-10-10T14:30:00+00:00"
+        }
+      },
+      "tools_used": [
+        "document_statistics"
+      ],
+      "session_id": "0fddd672-3649-43d6-9f12-a4e01099b6aa",
+      "user_id": "demo_user",
+      "actions_taken": [
+        "classify_intent",
+        "qa_agent",
+        "update_memory"
+      ]
+    }
+  ],
+  "document_context": [],
+  "created_at": "2026-01-09T09:33:24.158981",
+  "last_updated": "2026-01-09T09:33:45.892507"
+}
