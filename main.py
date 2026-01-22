@@ -4,11 +4,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 from print_color import print
 
-# Añadir src al path
-
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
-
-from src.assistant import DocumentAssistant
+from assistant import DocumentAssistant
 
 def print_header():
     """Print a nice header"""
